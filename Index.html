@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <title>UPL | Official Cricket League</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #07111f;
+      color: #fff;
+    }
+    header {
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #0b1728;
+      border-bottom: 2px solid #20d879;
+    }
+    .logo {
+      width: 58px;
+      height: 58px;
+      border: 2px solid #20d879;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #20d879;
+    }
+    header h1 { font-size: 25px; }
+    header p { font-size: 11px; color: #20d879; margin-top: 5px; }
+    nav {
+      display: flex;
+      gap: 20px;
+      padding: 16px;
+      overflow-x: auto;
+      background: #101e31;
+    }
+    nav a { color: white; text-decoration: none; white-space: nowrap; }
+    .hero {
+      padding: 55px 22px;
+      text-align: center;
+      background: linear-gradient(140deg, #102b40, #07111f);
+    }
+    .hero h2 { font-size: 38px; margin-bottom: 14px; }
+    .hero h2 span { color: #20d879; }
+    .hero p { color: #bdc8d6; line-height: 1.7; }
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid #20d879;
+      color: #20d879;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    main { padding: 25px 16px; max-width: 1000px; margin: auto; }
+    h2.section-title { margin: 15px 0 20px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: #101e31;
+      border: 1px solid #263b51;
+      padding: 22px 12px;
+      border-radius: 14px;
+      text-align: center;
+    }
+    .card .icon { font-size: 30px; margin-bottom: 12px; }
+    .card h3 { font-size: 16px; margin-bottom: 8px; }
+    .card p { color: #aab8c9; font-size: 13px; line-height: 1.5; }
+    .notice {
+      margin-top: 25px;
+      padding: 20px;
+      background: #102b24;
+      border: 1px solid #20d879;
+      border-radius: 12px;
+      line-height: 1.7;
+    }
+    footer {
+      margin-top: 30px;
+      padding: 25px 15px;
+      text-align: center;
+      background: #0b1728;
+      color: #aab8c9;
+      font-size: 13px;
+    }
+    @media(max-width: 400px) {
+      .hero h2 { font-size: 30px; }
+      header h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">UPL</div>
+    <div>
+      <h1>UPL CRICKET</h1>
+      <p>UNITED PREMIER LEAGUE</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#matches">Matches</a>
+    <a href="#teams">Teams</a>
+    <a href="#players">Players</a>
+    <a href="#points">Points Table</a>
+    <a href="#admin">Admin</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="badge">🏏 THE CRICKET LEAGUE</div>
+    <h2>WELCOME TO <span>UPL</span></h2>
+    <p>Your Tournament. Your Teams. Your Champions.</p>
+    <p>Official tournament information and match updates.</p>
+  </section>
+
+  <main>
+    <h2 class="section-title" id="matches">🏏 Match Center</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🔴</div>
+        <h3>Live Score</h3>
+        <p>No live match currently available.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📅</div>
+        <h3>Match Schedule</h3>
+        <p>Upcoming fixtures will appear here.</p>
+      </div>
+      <div class="card" id="points">
+        <div class="icon">🏆</div>
+        <h3>Points Table</h3>
+        <p>Official standings will appear here.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>Results</h3>
+        <p>Verified match results will appear here.</p>
+      </div>
+    </div>
+
+    <h2 class="section-title" id="teams" style="margin-top:30px">🛡️ Teams</h2>
+    <div class="grid">
+      <div class="card"><div class="icon">🏏</div><h3>Teams</h3><p>Team information coming soon.</p></div>
+      <div class="card" id="players"><div class="icon">👥</div><h3>Players</h3><p>Player profiles coming soon.</p></div>
+    </div>
+
+    <div class="notice" id="admin">
+      <h3>🔐 Admin Dashboard</h3>
+      <p>Administrator access will be configured after secure authentication and database setup.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 UPL Cricket League. All rights reserved.</p>
+    <p style="margin-top:8px">Play Fair • Play Together • Play Cricket</p>
+  </footer>
+</body>
+</html>
